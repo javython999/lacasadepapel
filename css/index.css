@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  background: black;
+  overflow-x: hidden;
+}
+
+.banner {
+  top: 0;
+  position: sticky;
+  z-index: -1;
+}
+
+.background {
+  width: 100vw;
+  display: block;
+}
+
+.logo {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+nav {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #2d2d2d;
+}
+
+.navbar > li {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  border: 1px solid white;
+  transition: background 500ms ease-in;
+}
+
+.navbar > li:hover {
+  background: #b1060e;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar > li > a {
+  display: block;
+}
+
+.content {
+  width: 100vw;
+  z-index: 3;
+  color: white;
+  background: black;
+}
+
+.contentWrap {
+  width: 100vw;
+}
+
+.characterList {
+  text-align: center;
+  padding-top: 5em;
+  z-index: 2;
+}
+
+.characterList > li {
+  width: 100%;
+}
+
+.characterItem {
+  padding-bottom: 5em;
+}
+
+.characterItem > div {
+  display: block;
+  position: relative;
+}
+
+.character {
+  padding-top: 1em;
+  font-size: 1.6rem;
+}
+
+.characterPic {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.hoverPic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.hoverPic:hover {
+  opacity: 1;
+}
+
+.description {
+  width: 50%;
+  padding-top: 1em;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.introWrap {
+  position: relative;
+}
+
+.videoPlayer {
+  position: absolute;
+  top: 30vw;
+  width: 100%;
+}
+
+.introWrap > img {
+  display: block;
+  width: 100%;
+}
+
+.seasonWrap {
+  width: 100vw;
+}
+
+.episodeList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.episodeItem {
+  width: 28rem;
+  padding-top: 2em;
+}
+
+.episodeBox {
+  width: 100%;
+}
+
+.episodeImg {
+  width: 100%;
+}
+
+.episodeInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.commentCount {
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.fa-comment-alt {
+  cursor: pointer;
+}
+
+.episodeComment {
+  display: none;
+}
+
+.comentForm {
+  width: 100%;
+  color: black;
+}
+
+.comentForm > form > input[name='nic'] {
+  font-size: 0.8em;
+  color: black;
+  width: 20%;
+}
+
+.comentForm > form > input[name='comment'] {
+  font-size: 0.8em;
+  color: black;
+  width: 70%;
+}
+
+.comentForm > form > input[type='submit'] {
+  color: black;
+  width: 10%;
+}
+
+.comentList {
+  width: 100%;
+  display: flex;
+}
+
+.comentList > ul {
+  width: 100%;
+  height: 16em;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.comentList > ul > li {
+  display: flex;
+}
+
+.nic {
+  width: 20%;
+  word-break: break-all;
+}
+
+.comment {
+  width: 80%;
+  word-break: break-all;
+}
+
+.comment::before {
+  content: ': ';
+}
+
+.episodeDescription {
+  padding-top: 0.5em;
+  width: 100%;
+}
