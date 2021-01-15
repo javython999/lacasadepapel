@@ -68,9 +68,9 @@
   // DB에서 데이터가져오기
   function casting() {
     $server = "localhost";
-    $user = "errdayphp";
-    $pw = "qwertymania!";
-    $db = "errdayphp";
+    $user = "#";
+    $pw = "#";
+    $db = "#";
     $conn = mysqli_connect($server, $user, $pw, $db);
     $sql = "SELECT * FROM cast";
     $result = mysqli_query($conn, $sql);
