@@ -93,9 +93,9 @@
     $season = $slice[0];
 
     $server = "localhost";
-    $user = "errdayphp";
-    $pw = "qwertymania!";
-    $db = "errdayphp";
+    $user = "#";
+    $pw = "#";
+    $db = "#";
     $conn = mysqli_connect($server, $user, $pw, $db);
     $sql = "SELECT * FROM $season";
 
