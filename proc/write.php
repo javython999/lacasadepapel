@@ -4,9 +4,9 @@
   function writeComment() {
     // DB연결
     $server = "localhost";
-    $user = "errdayphp";
-    $pw = "qwertymania!";
-    $db = "errdayphp";
+    $user = "#";
+    $pw = "#";
+    $db = "#";
     $conn = mysqli_connect($server, $user, $pw, $db);
 
     // 코멘트 DB에 저장
